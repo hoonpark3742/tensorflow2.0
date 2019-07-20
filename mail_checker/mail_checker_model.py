@@ -18,16 +18,16 @@ class MailChecker:
         """
         stop_words='english' 내장된 삭제할 영단어
         """
-        emails, labels = [], []
+        self.emails, self.labels = [], []
         file_path = './data/'
         for filename in glob.glob(os.path.join(file_path, 'ham.txt')):
             with open(filename, 'r', encoding='ISO-8859-1') as infile:
-                emails.append(infile.read())
-                labels.append(0)
+                self.emails.append(infile.read())
+                self.labels.append(0)
         for filename in glob.glob(os.path.join(file_path, 'spam.txt')):
             with open(filename, 'r', encoding='ISO-8859-1') as infile:
-                emails.append(infile.read())
-                labels.append(1)
+                self.emails.append(infile.read())
+                self.labels.append(1)
     @staticmethod
     def letters_only(astr):
         return astr.isalpha() #alpabeth 만 남기고 숫자나 기호 제거
@@ -46,14 +46,6 @@ class MailChecker:
                                           if self.letters_only(word)
                                           and word not in all_names]))
         return cleaned_docs
-
-    def execute(self):
-        cleaned_emails = self.clean_text(self.emails)
-        term_docs = self.cv.fit_transform(cleaned_emails)
-        feature_mapping = self.cv.vocalbulary
-        feature_names = self.cv.get_feature_names()
-
-        return [term_docs,feature_mapping,feature_names ]
 
     @staticmethod
     def get_label_index (labels):
@@ -94,7 +86,7 @@ class MailChecker:
         posteriors = []
         for i in range(num_docs):
             posterior = {key: np.log(prior_label)
-                          for key, prior_label in prior.items}
+                          for key, prior_label in prior.items()}
             for label, likelihood_label in likelihood.items():
                 term_document_vector = term_document_matrix.getrow(i)
                 counts = term_document_vector.data
@@ -117,9 +109,14 @@ class MailChecker:
         return posteriors
 
     def email_test(self, target):
+        cleaned_emails = self.clean_text(self.emails)
+        term_docs = self.cv.fit_transform(cleaned_emails)
+        feature_mapping = self.cv.vocabulary
+        feature_names = self.cv.get_feature_names()
         cleaned_test = self.clean_text(target)
         term_docs_test = self.cv.transform(cleaned_test)
-        prior = self.get_prior()
-        likelihood = self.get_likelihood(self.term_docs, self.get_label_index(),smoothing=1 )
+        label_index = self.get_label_index(self.labels)
+        prior = self.get_prior(label_index)
+        likelihood = self.get_likelihood(term_docs, label_index,smoothing=1 )
         posterior = self.get_posterior(term_docs_test, prior, likelihood)
         return posterior
