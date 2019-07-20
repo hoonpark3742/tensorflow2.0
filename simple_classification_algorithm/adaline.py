@@ -42,7 +42,7 @@ class Adaline():
     def _initialize_weights(self, m):
         """랜덤한 작은 수로 가중치를 초기화"""
         self.rgen = np.random.RandomState(self.random_state)
-        self.w_self.rgen.normal(loc = 0.0, scale = 0.01, size = 1 + m)
+        self.w_ = self.rgen.normal(loc = 0.0, scale = 0.01, size = 1 + m)
         self.w_initialized = True
 
     def _update_weights(self, xi, target):

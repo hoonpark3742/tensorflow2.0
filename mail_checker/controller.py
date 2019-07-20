@@ -1,38 +1,46 @@
-from simple_classification_algorithm.model import IrisModel
+from mail_checker.mail_checker_model import MailChecker
 
-
-class IrisController:
+class MailCheckerController:
     def __init__(self):
-        self.model = IrisModel()
-
+        self.model = MailChecker()
     @staticmethod
     def print_menu():
-        print('0. 종료')
-        print('1. 아이리스 데이터 출력')
-        print('2. 아이리스 산점도 그리기')
-        print('3. 에포크 대비 잘못 분류된 오차 그래프')
-        print('4. 2차원 데이터셋의 결정 경계 시각화')
-        print('5. Adaline 그래프 그리기')
-        return int(input('메뉴 선택 \n'))
-
-    @staticmethod
-    def show(param):
-        print('RESULT : %s' % param)
+        print('0.  종료')
+        print('1.  영어사전 다운로드')
+        print('2.  스팸메일 판별')
+        print('3.  ')
+        print('4.  ')
+        menu = input('메뉴 선택\n')
+        return int(menu)
 
     def run(self):
         model = self.model
         while 1:
             menu = self.print_menu()
             if menu == 0:
-               break
-            elif menu == 1:
-               self.show(model.get_iris())
+                break
+            elif menu == 1 :
+                model.down_eng_dictionary()
             elif menu == 2:
-               model.draw_scatter()
-            elif menu == 3:
-               model.draw_errors()
-            elif menu == 4:
-               model.plot_decision_regions()
-            elif menu == 5:
-               model.draw_adaline_graph()
+                emails_test = [
+                    '''Subject: flat screens
+                    hello ,
+                    please call or contact regarding the other flat screens requested .
+                    trisha tlapek - eb 3132 b
+                    michael sergeev - eb 3132 a
+                    also the sun blocker that was taken away from eb 3131 a .
+                    trisha should two monitors also michael .
+                    thanks
+                    kevin moore''',
+                    '''Subject: having problems in bed ? we can help !
+                    cialis allows men to enjoy a fully normal sex life without having to plan the sexual act .
+                    if we let things terrify us , life will not be worth living .
+                    brevity is the soul of lingerie .
+                    suspicion always haunts the guilty mind .''',
+                ]
+                result = model.email_test(emails_test)
+                self.show(result)
 
+    @staticmethod
+    def show(param):
+        print('RESULT : %s' % param)
