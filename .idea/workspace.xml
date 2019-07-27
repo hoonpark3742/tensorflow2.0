@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4be8bb9e-09f9-4338-8a20-270dc3b2aa5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cat_dog/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cnn_cifar/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constitution/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fbprophet_test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/one_hot/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock/ai_trader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock/trading.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news_crawling/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news_crawling/crawler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mail_checker/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/mail_checker/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mail_checker/data/ham.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mail_checker/ham/ham.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mail_checker/data/spam.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mail_checker/spam/spam.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mail_checker/mail_checker_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mail_checker/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/mail_checker/model.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,13 +14,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/constitution/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+            <state relative-caret-position="76">
+              <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news_crawling/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
+              <folding>
+                <element signature="e#24#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/news_crawling/data/saved.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news_crawling/crawler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="128" column="13" lean-forward="true" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
+              <folding>
+                <element signature="e#23#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,6 +122,8 @@
         <option value="$PROJECT_DIR$/fbprophet_test/__init__.py" />
         <option value="$PROJECT_DIR$/one_hot/__init__.py" />
         <option value="$PROJECT_DIR$/constitution/__init__.py" />
+        <option value="$PROJECT_DIR$/news_crawling/crawler.py" />
+        <option value="$PROJECT_DIR$/news_crawling/__init__.py" />
       </list>
     </option>
   </component>
@@ -130,12 +150,13 @@
             <path>
               <item name="flask190713" type="b2602c69:ProjectViewProjectNode" />
               <item name="flask190713" type="462c0819:PsiDirectoryNode" />
-              <item name="constitution" type="462c0819:PsiDirectoryNode" />
+              <item name="news_crawling" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flask190713" type="b2602c69:ProjectViewProjectNode" />
               <item name="flask190713" type="462c0819:PsiDirectoryNode" />
-              <item name="one_hot" type="462c0819:PsiDirectoryNode" />
+              <item name="news_crawling" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -168,7 +189,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.__init__ (3)">
+  <component name="RunManager" selected="Python.__init__ (5)">
     <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="flask190713" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -253,7 +274,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="__init__ (5)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="flask190713" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -261,11 +282,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cat_dog" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/news_crawling" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cat_dog/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/news_crawling/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -276,11 +297,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.__init__ (5)" />
         <item itemvalue="Python.__init__ (3)" />
         <item itemvalue="Python.__init__ (2)" />
         <item itemvalue="Python.__init__ (1)" />
         <item itemvalue="Python.__init__ (4)" />
-        <item itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
   </component>
@@ -310,12 +331,12 @@
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18629551" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18629551" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930845" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3830955" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3830955" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -328,61 +349,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1895075" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32930845" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28100988" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32930845" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32601535" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32821077" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Anaconda3/envs/tensorflow2/lib/site-packages/tensorflow/python/pywrap_tensorflow_internal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/envs/tensorflow2/lib/imp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="241" selection-start-line="241" selection-end-line="241" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tf_2_test/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tf_2_test/tf_2_mean.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tf_function/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -720,13 +688,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/constitution/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+        <state relative-caret-position="76">
+          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news_crawling/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="128" column="13" lean-forward="true" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news_crawling/data/saved.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news_crawling/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
+          <folding>
+            <element signature="e#24#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news_crawling/data/saved.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
